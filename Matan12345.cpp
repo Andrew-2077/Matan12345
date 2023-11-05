@@ -11,7 +11,7 @@ double func(double* y, double time, int i)
         w = y[1];
         break;
     case 1:
-        w = -0.01 * y[0] * exp(-time);
+        w = -0.51 * y[0] * exp(-time);
         break;
     default:
         break;
