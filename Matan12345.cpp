@@ -25,6 +25,7 @@ void Euler1()
     SetConsoleOutputCP(1251);
     double t0 = 0.0, tmax = 7.0, tau = 0.01, t = t0;
     double y[n] = { 0.0, 0.5 }, yy[n] = { 0.0 }, tn, tk, deltat;
+    double a[n][n], b[n], eps;
     tn = omp_get_wtime();
     for (double t = t0; t <= tmax; t += tau)
     {
@@ -180,5 +181,4 @@ int main()
     RK4();
     std::cout << "Неявный метод Эйлера" << std::endl;
     Euler2();
-    return 0;
 }
